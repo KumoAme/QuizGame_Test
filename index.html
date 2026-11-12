@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4択クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="game">
+
+    <!-- タイトル画面 -->
+    <section id="title-screen">
+      <h1>4択クイズ</h1>
+      <p>ENDLESS QUIZ</p>
+      <button id="start-button">ゲームスタート</button>
+    </section>
+
+    <!-- クイズ画面 -->
+    <section id="quiz-screen" hidden>
+      <div class="info">
+        <span id="question-number">第1問</span>
+        <span id="score">正解数：0</span>
+      </div>
+
+      <h2 id="question">問題文</h2>
+
+      <div class="choices" id="choices"></div>
+
+      <p id="message"></p>
+
+      <button id="next-button" hidden>次の問題へ</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
